@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Style>
+/* ==============================
+   General Page
+   ============================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ==============================
+   Header
+   ============================== */
+header {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: grey;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* ==============================
+   About Section
+   ============================== */
+#about {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+/* ==============================
+   Skills Section
+   ============================== */
+#skills {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+#skills h1 {
+  color: grey;
+}
+
+/* ==============================
+   Projects Section
+   ============================== */
+#projects {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  border: 1px solid #ccc;
+}
+
+/* ==============================
+   Contact Section
+   ============================== */
+#contact {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact label {
+  font-weight: bold;
+}
+
+#contact input, 
+#contact button {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact button {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #444;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+footer {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+</style>
+  <title>My Portfolio</title>
+  </head>
+<body>
+  <header>
+    <h1>Welcome To My Portfolio</h1>
+    <a href="#about"><button>About</button></a>
+    <a href="#skills"><button>Skills</button></a>
+    <a href="#projects"><button>Projects</button></a>
+    <a href="#contact"><button>Contact</button></a>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>B. Roji Neha</h1>
+      <p>I am currently pursuing my B.Tech in Anil Neerukonda Institute Of Technology And Sciences at Tagarapuvalasa.</p>
+      <p>I am studying 3rd year from the branch CSE(AI&ML).</p>
+      <p>I am so interested to learn how to create a website by using HTML, CSS.</p>
+    </section>
+
+    <section id="skills">
+      <h1>My Skills</h1>
+      <ol>
+        <li>Python Basics</li>
+        <li>HTML Basics</li>
+        <li>C</li>
+        <li>Data Structures</li>
+      </ol>
+    </section>
+
+    <section id="projects">
+      <h1>Projects</h1>
+      <p>Coming soon...</p>
+    </section>
+
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <h3>Details About Me</h3>
+      <form>
+        <label>Name:</label>
+        <input type="text" required><br>
+
+        <label>Email:</label>
+        <input type="email" required><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label><br>
+
+        <label>Interests:</label>
+        <input type="checkbox" id="coding" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="dancing" value="dancing">
+        <label for="dancing">Dancing</label>
+        <input type="checkbox" id="reading" value="reading">
+        <label for="reading">Reading</label><br>
+
+        <label>Bio:</label>
+        <input type="text" maxlength="200"><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Portfolio</p>
+  </footer>
+</body>
+</html>
